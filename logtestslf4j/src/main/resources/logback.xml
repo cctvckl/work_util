@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration debug="false" scan="false">
+
+	<!-- 定义日志的根目录 -->
+	<property name="LOG_HOME" value="../logs" />
+
+	<!-- 定义日志文件名称,与工程名一致 -->
+	<property name="APP_NAME" value="log_platform" />
+
+	<!-- 控制台输出设置 -->
+	<appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder">
+			<layout class="ch.qos.logback.classic.PatternLayout">
+				<pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n</pattern>
+			</layout>
+		</encoder>
+	</appender>
+
+
+	<root level="DEBUG">
+		<appender-ref ref="CONSOLE" />
+    </root>
+
+</configuration>
