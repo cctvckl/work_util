@@ -20,7 +20,7 @@ import javax.servlet.http.HttpServletResponse;
  **/
 @RestController
 public class TestController {
-    private static final Logger logger = LoggerFactory.getLogger(CacheRequestFilter.class);
+    private static final Logger logger = LoggerFactory.getLogger(TestController.class);
 
 
     @RequestMapping("/testGet.do")
